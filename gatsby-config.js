@@ -6,6 +6,17 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-remark-embedder`,
+      options: {
+        customTransformers: [
+          // Your custom transformers
+        ],
+        services: {
+          // The service-specific options by the name of the service
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

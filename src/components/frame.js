@@ -10,16 +10,16 @@ import PropTypes from "prop-types"
 import tw, { styled } from "twin.macro"
 import Header from "./header"
 
-const LayoutFrame = tw.main`mx-auto bg-blue-100`;
+const LayoutFrame = tw.main`mx-auto h-screen`;
 
-const Layout = ({ children }) => {
-  return (
-    <>
-      <Header />
-      <LayoutFrame >
-        {children}
-      </LayoutFrame>
-    </>
-  )
+const Frame = ({ children }) => {
+    return (
+        <>
+            <Header />
+            <LayoutFrame >
+                {children}
+            </LayoutFrame>
+        </>
+    )
 }
-export default Layout
+export default Frame
