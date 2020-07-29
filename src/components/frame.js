@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import tw, { styled } from "twin.macro"
 import Header from "./header"
 
-const LayoutFrame = tw.main`mx-auto h-screen`;
+const LayoutFrame = tw.main`mx-auto h-screen bg-main-bg`;
 
 const Frame = ({ children }) => {
     return (
