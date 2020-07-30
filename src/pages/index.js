@@ -25,6 +25,7 @@ const IndexPage = () => (
     <SOTD />
     <Mood/>
     <Curated />
+    <Curated />
 
   </Frame>
 )

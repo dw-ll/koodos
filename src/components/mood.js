@@ -9,7 +9,7 @@ const CuratedContentHeader = tw.h1`text-5xl font-semibold text-white leading-nor
 const CuratedSubHeader = tw.h3`text-3xl font-semibold text-main-accent leading-normal pl-12 ml-3`
 
 
-const MoodContainer = tw.article`flex mx-8 space-x-5`
+const MoodContainer = tw.article`flex mx-8 py-4 space-x-5`
 const MoodColumn = tw.div`flex`
 
 const MoodRowWrappers = tw.div`flex-col items-start space-y-8`
@@ -35,7 +35,7 @@ height:145px;
 
 const Mood = () => (
     <CuratedContainer>
-        <CuratedContentHeader>👉👈 moods + things</CuratedContentHeader>
+        <CuratedContentHeader>👉👈 moods + vibes</CuratedContentHeader>
         <MoodContainer>
             <MoodColumn>
                 <MoodColumnCard></MoodColumnCard>
