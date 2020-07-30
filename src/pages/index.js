@@ -24,8 +24,8 @@ const IndexPage = () => (
     <SEO title="Discover" />
     <SOTD />
     <Mood/>
-    <Curated />
-    <Curated />
+    <Curated type={'curations'} />
+    <Curated type={'curators'}/>
 
   </Frame>
 )

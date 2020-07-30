@@ -1,5 +1,6 @@
 import React from "react"
 import ReactPlayer from 'react-player'
+import Typist from 'react-typist';
 import TextLoop from "react-text-loop";
 import tw from "twin.macro"
 
@@ -11,12 +12,12 @@ const VOTDContainer = tw.div`px-12 py-3 pt-6 z-20  flex items-center`
 
 
 // Styled Wrappers
-const SOTDHeaderWrapper = tw.span`flex justify-start w-full px-40`
+const SOTDHeaderWrapper = tw.span`flex justify-start w-full px-40 py-3`
 const SOTDTextWrapper = tw.span`absolute bottom-0 left-0 mb-24 -ml-16 flex flex-col`
 const SOTDCurationsWrapper = tw.article`flex justify-center space-x-4`
 
 // Styled Text + Buttons
-const SOTDHeader = tw.h1`text-left font-semibold text-white text-5xl`
+const SOTDHeader = tw.h1`text-left font-semibold text-white text-4xl tracking-wide border-b-2  border-main-accent`
 const SOTDText = tw.h1`transition ease-in duration-700 font-semibold text-white text-5xl z-20`
 const SOTDCurText = tw.h1`font-semibold text-main-accent text-5xl z-20 ml-2`
 const SOTDSubtext = tw.span`flex justify-between`
@@ -28,7 +29,7 @@ const SOTDCurateButtonBG = tw.button`absolute z-10 bottom-0 right-0 ml-16 -mb-10
 const SOTD = () => (
     <ContentContainer>
         <SOTDHeaderWrapper>
-            <SOTDHeader>🔎 discover</SOTDHeader>
+            <SOTDHeader><Typist startDelay={1000}>👋🏻  🎧 discover new music + curators through emojis. </Typist></SOTDHeader>
         </SOTDHeaderWrapper>
         <SOTDContainer>
             <VOTDContainer>
