@@ -7,7 +7,7 @@ import tw, { styled } from "twin.macro"
 /* Containers & Wrappers */
 const CuratedContainer = tw.section`flex flex-col mx-auto px-6 md:px-40 md:py-4 mt-16 md:mt-0 w-full items-start  bg-main-bg`
 const MoodContainer = tw.article`hidden md:flex mx-8 py-4 space-x-5`
-const MobileContainer = tw.article`md:hidden grid grid-cols-2 grid-rows-2 py-3`
+const MobileContainer = tw.article`md:hidden grid grid-cols-2 grid-rows-2 py-4 mx-auto`
 const MoodRowWrappers = tw.div`flex-col items-start space-y-8`
 const MoodRow = tw.div`flex space-x-4`
 const MoodColumn = tw.div`flex`

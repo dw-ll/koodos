@@ -50,7 +50,7 @@ height: 58px;
 border-radius:25px;
 `
 const CuratedCardTab = styled.div`
-${tw`flex items-center justify-center space-x-2 z-20 bottom-0 -mb-5 bg-main-accent`}
+${tw`flex items-center justify-center space-x-2 z-20 bottom-0 -mb-5 bg-main-accent cursor-pointer`}
 position: absolute;
 left:36%;
 width: 100px;
@@ -81,7 +81,7 @@ const Card = ({ curatedInfo }) => (
                         </CuratorInfoText>
                     </CuratorInfo>
                     <CurationInfo>
-                        <CurationTitle class='border-b-2 border-white'>curation {curatedInfo.title}</CurationTitle>
+                        <CurationTitle>curation {curatedInfo.title}</CurationTitle>
                         <CuratorTitle>curator {curatedInfo.curator}</CuratorTitle>
                     </CurationInfo>
                 </CuratedInfoWrapper>
@@ -109,7 +109,7 @@ const Card = ({ curatedInfo }) => (
                     </CuratorInfo>
                     <CurationInfoRow>
                         <CurationInfo>
-                            <CurationTitle class='border-b-2 border-white'>curation {curatedInfo.title}</CurationTitle>
+                            <CurationTitle>curation {curatedInfo.title}</CurationTitle>
                             <CuratorTitle>curator {curatedInfo.curator}</CuratorTitle>
                         </CurationInfo>
                     </CurationInfoRow>

@@ -59,12 +59,12 @@ border-radius:25px;
 const CuratedCardTab = styled.div`
 ${tw`flex items-center justify-center space-x-2 z-20 bottom-0 -mb-5 bg-main-accent  cursor-pointer`}
 position: absolute;
-left:30%;
+left:32%;
 width: 130px;
 height: 58px;
 border-radius:25px;
 `
-const TabInfo = tw.div`flex items-center text-xs md:text-sm font-semibold`
+const TabInfo = tw.div`flex space-x-1 items-center text-xs md:text-sm font-semibold`
 
 const CuratorCard = ({ curatedInfo }) => (
     <>

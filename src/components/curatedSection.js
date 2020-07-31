@@ -5,7 +5,7 @@ import Card from './curationCard'
 import CuratorCard from './curatorCard';
 
 
-const CuratedContainer = tw.section`flex flex-col mx-auto w-full items-start px-6 md:px-40 bg-main-bg content-start`
+const CuratedContainer = tw.section`flex relative flex-col mx-auto w-full items-start px-6 md:px-40 bg-main-bg content-start`
 const CuratedContentHeader = tw.h1`text-3xl font-semibold text-white leading-normal`
 const CuratedCardContainer = tw.article`flex w-full h-72 md:w-auto justify-between space-x-6 px-2 my-6 overflow-x-scroll`;
 
@@ -71,7 +71,6 @@ const Curated = ({ type }) => (
             {renderCards(type)}
         </CuratedCardContainer>
     </CuratedContainer>
-
 )
 export default Curated;
 
