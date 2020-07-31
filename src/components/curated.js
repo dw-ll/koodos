@@ -1,13 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 import tw, { styled } from "twin.macro"
-import Card from './card'
+import Card from './curationCard'
+import CuratorCard from './curatorCard';
 
 
-const CuratedContainer = tw.section`flex flex-col mx-auto w-full items-start px-40 bg-main-bg content-start`
+const CuratedContainer = tw.section`flex flex-col mx-auto w-full items-start px-6 md:px-40 bg-main-bg content-start`
 const CuratedContentHeader = tw.h1`text-3xl font-semibold text-white leading-normal`
-const CuratedSubHeader = tw.h3`text-3xl font-semibold text-main-accent leading-normal pl-12 ml-3`
-const CuratedCardContainer = tw.article`flex justify-between space-x-4 px-12 my-6`;
+const CuratedCardContainer = tw.article`flex w-full h-72 md:w-auto justify-between space-x-6 px-2 my-6 overflow-x-scroll`;
 
 
 const dummyCurations = [
@@ -15,33 +15,60 @@ const dummyCurations = [
         curator: "🥰🤗😴",
         title: "🐝🏡🌳",
         subscribers: "25",
-        songs: "30"
-   },
+        songs: "30",
+        curationMood: "#84A98C"
+    },
     {
         curator: "💅🏻👩🏻‍🎤💓",
         title: "👻✨🦉",
         subscribers: "12",
-        songs: "17"
+        songs: "17",
+        curationMood: "#40376E"
     },
     {
         curator: "👻🌐👾",
         title: "🌎🌊🌧",
         subscribers: "10",
-        songs: "5"
+        songs: "5",
+        curationMood: "#354F52"
     }
 ]
 
-const renderCards = () => {
-    return dummyCurations.map(dummyData => {
-        return <Card curatedInfo={dummyData} />
+const dummyCurators = [
+    {
+        curator: "🥰🤗😴",
+        score: 33,
+        subscribers: 105,
+        curatorTheme: "#B56576"
+    },
+    {
+        curator: "👻🌐👾",
+        score: 33,
+        subscribers: 82,
+        curatorTheme: "#6D597A"
+    },
+    {
+        curator: "💅🏻👩🏻‍🎤💓",
+        score: 20,
+        subscribers: 55,
+        curatorTheme: "#A6B1E1"
     }
-    )
+]
+
+const renderCards = (type) => {
+    return type === 'curations'
+        ? dummyCurations.map(dummyData => {
+            return <Card curatedInfo={dummyData} />
+        }) : dummyCurators.map(dummyData => {
+            return <CuratorCard curatedInfo={dummyData} />
+        })
 }
+
 const Curated = ({ type }) => (
     <CuratedContainer>
         <CuratedContentHeader>📈 popular {type}</CuratedContentHeader>
         <CuratedCardContainer>
-            {renderCards()}
+            {renderCards(type)}
         </CuratedCardContainer>
     </CuratedContainer>
 

@@ -6,7 +6,7 @@ import tw, { styled } from "twin.macro"
 
 
 // Styled Containers
-const ContentContainer = tw.section`h-full mx-auto items-center bg-main-bg flex flex-col space-y-2`
+const ContentContainer = tw.section`md:h-full mx-auto py-4 items-center bg-main-bg flex flex-col space-y-2`
 const SOTDContainer = styled.article`
 ${tw`relative md:hidden bg-main-fg rounded-lg shadow-md`}
 width:345px;
@@ -30,7 +30,7 @@ const SOTDText = tw.h1`transition ease-in duration-700 font-semibold text-white 
 const SOTDCurText = tw.h1`font-semibold text-main-accent text-3xl md:text-5xl z-20 ml-2 underline`
 const SOTDSubtext = tw.span`flex justify-between`
 
-const SOTDCurationsText = tw.article`font-semibold text-white text-2xl md:text-4xl m-1`
+const SOTDCurationsText = tw.article`font-semibold text-white text-2xl md:text-3xl m-1`
 const SOTDCurateButton = styled.button`
 ${tw`absolute bottom-0 right-0 ml-8 -mb-6  py-3 rounded-full shadow-lg bg-main-accent text-lg`}
 height:65px;

@@ -9,6 +9,7 @@ module.exports = {
         'full': '100%',
       },
       height: {
+        '72': '18rem',
         '128': '32rem'
       },
       colors: {
