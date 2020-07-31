@@ -35,8 +35,8 @@ ${tw`absolute bottom-0 right-0 ml-8 -mb-6  py-3 rounded-full shadow-lg bg-main-a
 height:65px;
 width:65px;
 `
-const LargeSOTDCurateButton = tw.button`absolute z-20 bottom-0 right-0 ml-10 -mb-8 px-10 py-3 bg-main-accent font-semibold text-lg text-black`
-const LargeSOTDCurateButtonBG = tw.button`absolute z-10 bottom-0 right-0 ml-16 -mb-10 px-10 py-3 bg-black font-semibold text-lg text-black`
+const LargeSOTDCurateButton = tw.button`absolute z-20 bottom-0 right-0 -mr-5 ml-24 -mb-8 px-10 py-3 bg-main-accent font-semibold text-lg text-black`
+const LargeSOTDCurateButtonBG = tw.button`absolute z-10 bottom-0 right-0 -mr-4 -mb-10 px-10 py-4 bg-black font-semibold text-lg text-black`
 
 const SOTD = () => {
     return (
