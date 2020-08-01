@@ -20,7 +20,7 @@ const CuratedCardWrapper = styled.div`
 `
 const CuratedCardBackdrop = styled.div`
     ${tw` w-full absolute left-0 z-10  bg-blue-200`}
-    height:110px;
+    height:105px;
     border-radius:25px 25px 0 0;
 `
 const MobileCuratedCardBackdrop = styled.div`
@@ -42,7 +42,7 @@ width:85px;
 /* Curator Info */
 const CuratorTrophy = tw.article`flex justify-start px-0 md:px-4 tracking-wide z-20`
 const CuratorTrophyText = tw.h5`flex text-white md:text-xl font-semibold z-20 -ml-6 md:-ml-1`
-const CurationInfoRow = tw.article`flex flex-col z-20 justify-center md:justify-start items-center text-center w-full mx-2 md:mx-1 px-4 md:px-12 py-1 md:py-3 space-y-2 md:space-x-8`
+const CurationInfoRow = tw.article`flex flex-col z-20 justify-center md:justify-start items-center text-center w-full md:mx-1 px-4 md:px-12 py-1 md:py-3 space-y-2 md:space-x-8`
 const CurationInfo = tw.div`flex w-full flex-col z-20 items-center justify-center md:items-center mb-2`
 const CurationTitle = tw.h3`text-xl md:text-2xl z-20 text-white text-center tracking-wider  md:mr-8`
 
@@ -51,7 +51,7 @@ const CurationTitle = tw.h3`text-xl md:text-2xl z-20 text-white text-center trac
 const MobileCuratedCardTab = styled.div`
 ${tw`flex items-center justify-center space-x-2 z-20 bottom-0 -mb-5 px-2 py-1 bg-main-accent`}
 position: absolute;
-left:28%;
+left:23%;
 width: 100px;
 height: 58px;
 border-radius:25px;
@@ -59,7 +59,7 @@ border-radius:25px;
 const CuratedCardTab = styled.div`
 ${tw`flex items-center justify-center space-x-2 z-20 bottom-0 -mb-5 bg-main-accent  cursor-pointer`}
 position: absolute;
-left:32%;
+left:30%;
 width: 130px;
 height: 58px;
 border-radius:25px;
