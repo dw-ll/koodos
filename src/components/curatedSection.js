@@ -16,6 +16,7 @@ const dummyCurations = [
         title: "🐝🏡🌳",
         subscribers: "25",
         songs: "30",
+        subscribed: true,
         curationMood: "#84A98C"
     },
     {
@@ -23,6 +24,7 @@ const dummyCurations = [
         title: "👻✨🦉",
         subscribers: "12",
         songs: "17",
+        subscribed: true,
         curationMood: "#40376E"
     },
     {
@@ -30,6 +32,7 @@ const dummyCurations = [
         title: "🌎🌊🌧",
         subscribers: "10",
         songs: "5",
+        subscribed: false,
         curationMood: "#354F52"
     }
 ]
@@ -39,19 +42,24 @@ const dummyCurators = [
         curator: "🥰🤗😴",
         score: 33,
         subscribers: 105,
-        curatorTheme: "#B56576"
+        curatorTheme: "#B56576",
+        subscribed:true
     },
     {
         curator: "👻🌐👾",
         score: 33,
         subscribers: 82,
-        curatorTheme: "#6D597A"
+        curatorTheme: "#6D597A",
+        subscribed: false
+
     },
     {
         curator: "💅🏻👩🏻‍🎤💓",
         score: 20,
         subscribers: 55,
-        curatorTheme: "#A6B1E1"
+        curatorTheme: "#A6B1E1",
+        subscribed: false
+
     }
 ]
 

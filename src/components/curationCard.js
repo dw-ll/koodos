@@ -4,6 +4,10 @@ import { Icon } from '@iconify/react';
 import playFill from '@iconify/icons-bi/play-fill';
 import sharpGroup from '@iconify/icons-ic/sharp-group';
 import roundQueueMusic from '@iconify/icons-ic/round-queue-music';
+import bxsUserCheck from '@iconify/icons-bx/bxs-user-check';
+import personAddFill from '@iconify/icons-eva/person-add-fill';
+
+
 
 
 /* Containers & Wrappers*/
@@ -36,7 +40,7 @@ const CuratedCard = tw.div`flex flex-col items-start space-y-3 py-2 z-10 w-full 
 const CuratorInfo = tw.article`flex justify-start px-0 md:px-4 tracking-wide z-20`
 const CuratorInfoText = tw.h5`text-white md:text-2xl font-semibold z-20 -ml-12 md:-ml-5`
 const CurationInfoRow = tw.article`justify-center items-center text-center w-full mr-2 md:px-16 py-8 md:py-2  md:space-x-8`
-const CurationInfo = tw.div`flex w-full flex-col items-center justify-center pt-2 mr-8 pr-3 my-4 z-20`
+const CurationInfo = tw.div`flex w-full flex-col items-center justify-center pt-2 mr-12 md:mr-8 pr-6 md:pr-3 my-4 z-20`
 const CurationTitle = tw.h3`md:text-xl text-white text-left md:tracking-wider z-20 font-semibold border-b-2 border-white`
 const CuratorTitle = tw.h3`md:text-xl text-white text-left md:tracking-wider z-20 font-semibold`
 
@@ -59,14 +63,27 @@ border-radius:25px;
 `
 const TabInfo = tw.div`flex items-center text-xs md:text-sm font-semibold`
 
+const CurationTab = styled.div`
+${tw`flex justify-center text-main-fg items-center text-xs md:text-sm font-semibold`}
+.tab-icon + .tab-icon{
+    border-left: solid 1px #20282A;
+}
+`
+const CurationTabIconWrapper = tw.div`px-3 flex-col text-center justify-center items-center`
+
 const Card = ({ curatedInfo }) => (
     <>
         <MobileCuratedCardWrapper >
             <MobileCuratedCardBackdrop style={{ backgroundColor: curatedInfo.curationMood }} />
             <MobileCuratedCardTab style={{ backgroundColor: curatedInfo.curationMood }}>
-                <TabInfo>
-                    <Icon width="25" height="25" icon={playFill} />
-                </TabInfo>
+                <CurationTab>
+                    <CurationTabIconWrapper className='tab-icon'>
+                        <Icon width="20px" icon={curatedInfo.subscribed ? bxsUserCheck : personAddFill} />
+                    </CurationTabIconWrapper>
+                    <CurationTabIconWrapper className='tab-icon'>
+                        <Icon width="20" icon={playFill} />
+                    </CurationTabIconWrapper>
+                </CurationTab>
             </MobileCuratedCardTab>
             <CuratedCard>
                 <CuratedInfoWrapper>
@@ -91,9 +108,14 @@ const Card = ({ curatedInfo }) => (
         <CuratedCardWrapper>
             <CuratedCardBackdrop style={{ backgroundColor: curatedInfo.curationMood }} />
             <CuratedCardTab style={{ backgroundColor: curatedInfo.curationMood }}>
-                <TabInfo>
-                    <Icon width="25" height="25" icon={playFill} />
-                </TabInfo>
+                <CurationTab>
+                    <CurationTabIconWrapper className='tab-icon'>
+                        <Icon width="20px" icon={curatedInfo.subscribed ? bxsUserCheck : personAddFill} />
+                    </CurationTabIconWrapper>
+                    <CurationTabIconWrapper className='tab-icon'>
+                        <Icon width="20" icon={playFill} />
+                    </CurationTabIconWrapper>
+                </CurationTab>
             </CuratedCardTab>
             <CuratedCard>
                 <CuratedInfoWrapper>
