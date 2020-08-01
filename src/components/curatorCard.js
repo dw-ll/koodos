@@ -9,8 +9,6 @@ import userSolid from '@iconify/icons-clarity/user-solid';
 import bxsUserCheck from '@iconify/icons-bx/bxs-user-check';
 
 
-
-
 /* Card Wrappers */
 const MobileCuratedCardWrapper = styled.div`
     ${tw`md:hidden relative z-10 bg-main-fg shadow-xl px-8`}
@@ -112,7 +110,6 @@ const CuratorCard = ({ curatedInfo }) => (
                         <CuratorInfo>
                             <CuratorId>{curatedInfo.curator}</CuratorId>
                             <CuratorBio>An example bio ..</CuratorBio>
-
                         </CuratorInfo>
                     </CuratorInfoRow>
                 </CuratedInfoWrapper>

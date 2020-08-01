@@ -110,10 +110,10 @@ const Card = ({ curatedInfo }) => (
             <CuratedCardTab style={{ backgroundColor: curatedInfo.curationMood }}>
                 <CurationTab>
                     <CurationTabIconWrapper className='tab-icon'>
-                        <Icon width="20px" icon={curatedInfo.subscribed ? bxsUserCheck : personAddFill} />
+                        <Icon width="25px" icon={curatedInfo.subscribed ? bxsUserCheck : personAddFill} />
                     </CurationTabIconWrapper>
                     <CurationTabIconWrapper className='tab-icon'>
-                        <Icon width="20" icon={playFill} />
+                        <Icon width="25px" icon={playFill} />
                     </CurationTabIconWrapper>
                 </CurationTab>
             </CuratedCardTab>

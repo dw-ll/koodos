@@ -2,7 +2,7 @@
   "name": "koodos-discover",
   "private": true,
   "description": "A prototype for curated content exploration with koodos.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
